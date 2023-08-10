@@ -34,15 +34,31 @@
 
   <header>
     <div class="flex m-5 justify-between">
-      <img class="self-center" src="images/logo.svg" alt="">
-      <img src="images/icon-hamburger.svg" alt="">
+      <img class="self-center" src="images/logo.svg" alt="logo">
+      <img id="open" src="images/icon-hamburger.svg" alt="menu">
+    </div>
+    <div class="absolute top-0 p-5 w-full h-72 hidden">
+      <div class="flex justify-between bg-white">
+        <img class="self-center" src="images/logo.svg" alt="logo">
+        <img id="close" src="images/icon-close.svg" alt="">
+      </div>
+      <div class="relative">
+        <ul class="h-96 mt-5 p-10 bg-darkviolet text-white uppercase font-semibold flex flex-col text-center gap-8">
+          <li>how we work</li>
+          <li>blog</li>
+          <li>account</li>
+          <li class="border-2 w-72 p-2 self-center">View plans</li>
+        </ul>
+        <img class="absolute bottom-0 w-96 right-0" src="images/bg-pattern-mobile-nav.svg" alt="">
+      </div>
     </div>
   </header>
 
   <main class="text-karla">
 
     <section>
-      <img src="images/image-intro-mobile.jpg" alt="">
+      <img class="w-full lg:hidden" src="images/image-intro-mobile.jpg" alt="intro mobile">
+      <img class="hidden" src="images/image-intro-desktop.jpg" alt="intro desktop">
       <div class="bg-darkviolet flex justify-center flex-col text-center relative">
         <img src="images/bg-pattern-intro-left-mobile.svg" class="absolute top-0" alt="">
         <h1 class="text-white text-4xl pt-16 text-dm">Humanizing your insurance.</h1>
